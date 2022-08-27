@@ -20,7 +20,7 @@ const CadastroProvider = ({children}) => {
   
     const handleChange =(e, chave)=>{
       setDados({...dados, [chave]: e.target.value})
-      console.log(e.target.value, dados);
+      console.log( lista);
     }
     const handleClick = ()=>{
       setLista([...lista, dados])
