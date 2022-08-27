@@ -1,24 +1,19 @@
 import React from 'react'
 import { useState } from 'react'
+import Button from '../../components/Button/Button'
+import Form1 from '../../components/Form1/Form1'
 import Label from '../../components/Label/Label'
+import S from './Cadastro.module.css'
+import CadastroProvider from '../../context/Cadastro'
 const Cadastro = () => {
-  const [cadastro, setCadastro] = useState({
-    nome: "",
-    sobrenome: "",
-    email: "",
-    telefone: "",
-    cep: "",
-    endereco1: "",
-    endereco2: "",
-    dataNascimento: "",
-    cpf: "",
-    rendaMensal: ""
-  })
+  
+  
   return (
     <div>
-      <form action="">
-        <Label texto='Nome'/>
-      </form>
+      <CadastroProvider>
+        <Form1/>
+        
+      </CadastroProvider>
     </div>
   )
 }

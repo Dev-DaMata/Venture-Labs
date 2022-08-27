@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import Button from '../Button/Button'
+import Form1 from '../Form1/Form1'
 import S from './Header.module.css'
 const Header = () => {
   return (
@@ -11,13 +12,9 @@ const Header = () => {
               <button className={S.button}><Link to='/'>Home</Link></button>
               <button><Link to='/cadastro'>Cadastro</Link></button>
               <button><Link to='/clientes'>Clientes</Link></button>
-            </nav>
-            
+            </nav>     
         </div>
-        <div>
-            <form>
-            </form>
-        </div>
+
     </header>
   )
 }
