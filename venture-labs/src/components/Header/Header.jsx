@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import Button from '../Button/Button'
 import S from './Header.module.css'
 const Header = () => {
@@ -6,14 +7,15 @@ const Header = () => {
     <header className={S.container}>
         <div className={S.left} >
             <h1>Venture Labs</h1>
-            <Button texto="Cadastrar"/>
-            <Button texto="Login"/>
+            <nav className={S.link}>
+              <button className={S.button}><Link to='/'>Home</Link></button>
+              <button><Link to='/cadastro'>Cadastro</Link></button>
+              <button><Link to='/clientes'>Clientes</Link></button>
+            </nav>
             
         </div>
         <div>
             <form>
-                <input type="text" />
-                <label htmlFor="">oioi</label>
             </form>
         </div>
     </header>

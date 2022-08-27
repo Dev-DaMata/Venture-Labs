@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Button = ({texto}) => {
+const Button = ({texto, onclick}) => {
   return (
-    <button>{texto}</button>
+    <button onclick={onclick}>{texto}</button>
   )
 }
 

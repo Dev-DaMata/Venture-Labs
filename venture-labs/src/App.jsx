@@ -1,16 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import Header from './components/Header/Header'
-
+import { useState } from "react";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Cadastro from "./Pages/Cadastro/Cadastro";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <div>
-      <Header/>
-    </div>
-  )
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/cadastro" element={<Cadastro />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
